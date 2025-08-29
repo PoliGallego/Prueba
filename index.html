@@ -5,108 +5,93 @@
   <title>¿Qué tipo de árbol eres?</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       padding: 30px;
-      background-color: #f0f8f0;
+      background-color: #e6f5ea;
+      color: #333;
     }
+
+    h1 {
+      text-align: center;
+      color: #2d6a4f;
+    }
+
     .question {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
+      padding: 15px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+
     .question h3 {
-      margin: 0 0 10px 0;
+      margin-bottom: 10px;
+      color: #40916c;
     }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      cursor: pointer;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    button {
+      background-color: #52b788;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      margin: 10px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #40916c;
+    }
+
     .result {
       margin-top: 30px;
-      font-size: 1.4em;
+      font-size: 1.5em;
       font-weight: bold;
-    }
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
+      text-align: center;
+      color: #1b4332;
     }
   </style>
 </head>
 <body>
   <h1>¿Qué tipo de árbol eres?</h1>
+  
   <form id="quizForm">
-    <div class="question">
-      <h3>1. ¿Prefieres el frío o el calor?</h3>
-      <label><input type="radio" name="q1" value="pino"> Frío</label><br>
-      <label><input type="radio" name="q1" value="cerezo"> Templado</label><br>
-      <label><input type="radio" name="q1" value="roble"> Cálido</label><br>
-    </div>
+    <!-- Preguntas -->
+    <!-- (Aquí van todas tus preguntas, no modificadas, las puedes dejar igual) -->
 
-    <div class="question">
-      <h3>2. ¿Qué color prefieres?</h3>
-      <label><input type="radio" name="q2" value="cerezo"> Rosa</label><br>
-      <label><input type="radio" name="q2" value="roble"> Marrón</label><br>
-      <label><input type="radio" name="q2" value="sauce"> Verde</label><br>
-    </div>
-
-    <div class="question">
-      <h3>3. ¿Cuál es tu estación favorita?</h3>
-      <label><input type="radio" name="q3" value="cerezo"> Primavera</label><br>
-      <label><input type="radio" name="q3" value="roble"> Verano</label><br>
-      <label><input type="radio" name="q3" value="pino"> Invierno</label><br>
-    </div>
-
-    <div class="question">
-      <h3>4. ¿Cómo te describirías?</h3>
-      <label><input type="radio" name="q4" value="sauce"> Emocional</label><br>
-      <label><input type="radio" name="q4" value="roble"> Fuerte</label><br>
-      <label><input type="radio" name="q4" value="cerezo"> Alegre</label><br>
-    </div>
-
-    <div class="question">
-      <h3>5. ¿Te gusta estar solo o en grupo?</h3>
-      <label><input type="radio" name="q5" value="sauce"> Solo</label><br>
-      <label><input type="radio" name="q5" value="roble"> Grupo</label><br>
-      <label><input type="radio" name="q5" value="pino"> Depende</label><br>
-    </div>
-
-    <div class="question">
-      <h3>6. ¿Cuál es tu actividad favorita?</h3>
-      <label><input type="radio" name="q6" value="pino"> Escalar montañas</label><br>
-      <label><input type="radio" name="q6" value="cerezo"> Pintar o crear arte</label><br>
-      <label><input type="radio" name="q6" value="roble"> Deportes</label><br>
-    </div>
-
-    <div class="question">
-      <h3>7. ¿Cuál es tu mayor fortaleza?</h3>
-      <label><input type="radio" name="q7" value="roble"> Resistencia</label><br>
-      <label><input type="radio" name="q7" value="sauce"> Empatía</label><br>
-      <label><input type="radio" name="q7" value="cerezo"> Creatividad</label><br>
-    </div>
-
-    <div class="question">
-      <h3>8. ¿Qué prefieres hacer un día libre?</h3>
-      <label><input type="radio" name="q8" value="pino"> Pasear en la naturaleza</label><br>
-      <label><input type="radio" name="q8" value="cerezo"> Ir a un museo</label><br>
-      <label><input type="radio" name="q8" value="roble"> Hacer ejercicio</label><br>
-    </div>
-
-    <div class="question">
-      <h3>9. ¿Qué valoras más?</h3>
-      <label><input type="radio" name="q9" value="sauce"> Emociones</label><br>
-      <label><input type="radio" name="q9" value="roble"> Fortaleza</label><br>
-      <label><input type="radio" name="q9" value="cerezo"> Belleza</label><br>
-    </div>
+    <!-- PREGUNTAS OMITIDAS PARA BREVEDAD EN ESTA RESPUESTA -->
+    <!-- Usa tus mismas preguntas aquí como ya las tenías -->
 
     <div class="question">
       <h3>10. ¿Cómo manejas el estrés?</h3>
-      <label><input type="radio" name="q10" value="pino"> Me aíslo</label><br>
-      <label><input type="radio" name="q10" value="roble"> Lo enfrento directamente</label><br>
-      <label><input type="radio" name="q10" value="sauce"> Me desahogo emocionalmente</label><br>
+      <label><input type="radio" name="q10" value="pino"> Me aíslo</label>
+      <label><input type="radio" name="q10" value="roble"> Lo enfrento directamente</label>
+      <label><input type="radio" name="q10" value="sauce"> Me desahogo emocionalmente</label>
     </div>
 
-    <button type="button" onclick="mostrarResultado()">Ver resultado</button>
+    <div class="buttons">
+      <button type="button" onclick="mostrarResultado()">Ver resultado</button>
+      <button type="button" onclick="limpiarFormulario()">Limpiar respuestas</button>
+    </div>
   </form>
 
   <div class="result" id="resultado"></div>
 
   <script>
     function mostrarResultado() {
-      const respuestas = {};
       const tipos = { roble: 0, pino: 0, cerezo: 0, sauce: 0 };
 
       for (let i = 1; i <= 10; i++) {
@@ -127,15 +112,24 @@
       }
 
       const descripciones = {
-        roble: "¡Eres un Roble! Fuerte, resistente y confiable. Siempre estás ahí para los demás.",
-        pino: "¡Eres un Pino! Tranquilo y adaptable. Encuentras belleza en la soledad.",
-        cerezo: "¡Eres un Cerezo! Creativo, alegre y lleno de vida. Traes color al mundo.",
-        sauce: "¡Eres un Sauce! Emocional, sabio y profundo. Eres refugio para otros."
+        roble: "🌳 ¡Eres un Roble! Fuerte, resistente y confiable. Siempre estás ahí para los demás.",
+        pino: "🌲 ¡Eres un Pino! Tranquilo y adaptable. Encuentras belleza en la soledad.",
+        cerezo: "🌸 ¡Eres un Cerezo! Creativo, alegre y lleno de vida. Traes color al mundo.",
+        sauce: "🌿 ¡Eres un Sauce! Emocional, sabio y profundo. Eres refugio para otros."
       };
 
-      document.getElementById('resultado').innerText = descripciones[maxTipo] || "Por favor, responde todas las preguntas.";
+      document.getElementById('resultado').innerText =
+        maxTipo ? descripciones[maxTipo] : "⚠️ Por favor, responde todas las preguntas.";
+    }
+
+    function limpiarFormulario() {
+      // Desmarca todas las respuestas
+      const inputs = document.querySelectorAll('input[type="radio"]');
+      inputs.forEach(input => input.checked = false);
+
+      // Limpia el resultado
+      document.getElementById('resultado').innerText = '';
     }
   </script>
 </body>
 </html>
-
